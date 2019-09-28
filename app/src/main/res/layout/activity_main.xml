@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridView
+        android:id='@+id/gridView'
+        android:layout_width="wrap_content"
+        android:layout_height="319dp"
+        android:columnWidth="160dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp" />
+
+    <ImageView
+        android:id="@+id/picLarge"
+        android:layout_width="270dp"
+        android:layout_height="259dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/picLarge" />
+
+    <TextView
+        android:id="@+id/contactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contactUs"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/weddingLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:clickable="true"
+        android:text="@string/weddingLink"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
